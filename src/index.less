@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background: #f5f6fa;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    padding: 16px;
+
+    .container-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-row+.container-row {
+        margin-top: 16px;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #ffffff;
+        background-clip: border-box;
+        border: 1px solid #e5e9f2;
+        border-radius: 0.25rem;
+        width: calc(~"50% - 16px");
+
+        .card-header {
+            border-bottom: 1px solid #e5e9f2;
+            padding-left: 1.88rem;
+            padding-right: 1.88rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: calc(~"0.25rem - 1px") calc(~"0.25rem - 1px") 0 0;
+        }
+
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1.88rem 1.88rem;
+        }
+    }
+
+    .card+.card {
+        margin-left: 16px;
+    }
+
+    .badge-list {
+        .slk-badge+.slk-badge {
+            margin-left: 12px;
+        }
+    }
+
+    .button-list {
+        >div+div {
+            margin-top: 12px;
+        }
+
+        button+button {
+            margin-left: 12px;
+        }
+    }
+
+    .alert-list {
+        .slk-alert+.slk-alert {
+            margin-top: 12px;
+        }
+    }
+}

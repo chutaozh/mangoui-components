@@ -1,0 +1,38 @@
+:root {
+  /*======== COLOR ========*/
+  --slk-color-primary: #4c84ff;
+  --slk-color-secondary: #8a909d;
+  --slk-color-success: #29cc97;
+  --slk-color-info: #13cae1;
+  --slk-color-warning: #fec400;
+  --slk-color-danger: #fe5461;
+  --slk-color-dark: #1b223c;
+  --slk-color-white: #ffffff;
+
+  --slk-color-primary-active: #266aff;
+  --slk-color-secondary-active: #757c8c;
+  --slk-color-success-active: #23ac7f;
+  --slk-color-info-active: #10aabe;
+  --slk-color-warning-active: #d8a600;
+  --slk-color-danger-active: #fe2e3e;
+  --slk-color-dark-active: #13192d;
+
+  /*======== SIZE ========*/
+  --slk-border-radius: 4px;
+}
+
+/* $primary:       #4c84ff !default;
+$dark:          #1b223c !default;
+$secondary:     #8a909d !default;
+$gray-100:      #f5f6fa !default;
+$border-color:  #e5e9f2 !default;
+$navy:          #212a39 !default;
+$pink:          #ff548e !default;
+$success:       #29cc97 !default;
+$info:          #13cae1 !default;
+$warning:       #fec400 !default;
+$danger:        #fe5461 !default;
+$inverse:       #070707 !default;
+$purple:        #896def !default;
+$white:         #ffffff !default;
+$logo-fill-blue:#7DBCFF !default; */

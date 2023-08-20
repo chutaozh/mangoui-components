@@ -1,0 +1,175 @@
+@import url(../variables.css);
+
+/*======== BUTTON ========*/
+.slk-btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 8px 12px;
+  border-radius: var(--slk-border-radius);
+  height: 32px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.slk-btn:not(.slk-btn-disabled) {
+  cursor: pointer;
+}
+
+.slk-btn-disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.slk-btn-block {
+  width: 100%;
+  display: block;
+}
+
+/*======== BUTTON SIZE ========*/
+.slk-btn-sm {
+  padding: 6px 9px;
+  height: 24px;
+  font-size: 12px;
+}
+
+.slk-btn-lg {
+  padding: 10px 15px;
+  height: 40px;
+}
+
+/*======== BUTTON DEFAULT ========*/
+.slk-btn-default,
+.slk-btn-default.slk-btn-ghost:not(.slk-btn-disabled):hover {
+  color: var(--slk-color-white);
+  background-color: var(--slk-color-secondary);
+  border-color: var(--slk-color-secondary);
+}
+
+.slk-btn-default:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
+  background-color: var(--slk-color-secondary-active);
+  border-color: var(--slk-color-secondary-active);
+}
+
+.slk-btn-default.slk-btn-ghost {
+  color: var(--slk-color-secondary);
+  background-color: transparent;
+  border-color: var(--slk-color-secondary);
+}
+
+/*======== BUTTON PRIMARY ========*/
+.slk-btn-primary,
+.slk-btn-primary.slk-btn-ghost:not(.slk-btn-disabled):hover {
+  color: var(--slk-color-white);
+  background-color: var(--slk-color-primary);
+  border-color: var(--slk-color-primary);
+}
+
+.slk-btn-primary:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
+  background-color: var(--slk-color-primary-active);
+  border-color: var(--slk-color-primary-active);
+}
+
+.slk-btn-primary.slk-btn-ghost {
+  color: var(--slk-color-primary);
+  background-color: transparent;
+  border-color: var(--slk-color-primary);
+}
+
+/*======== BUTTON SUCCESS ========*/
+.slk-btn-success,
+.slk-btn-success.slk-btn-ghost:not(.slk-btn-disabled):hover {
+  color: var(--slk-color-white);
+  background-color: var(--slk-color-success);
+  border-color: var(--slk-color-success);
+}
+
+.slk-btn-success:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
+  background-color: var(--slk-color-success-active);
+  border-color: var(--slk-color-success-active);
+}
+
+.slk-btn-success.slk-btn-ghost {
+  color: var(--slk-color-success);
+  background-color: transparent;
+  border-color: var(--slk-color-success);
+}
+
+/*======== BUTTON INFO ========*/
+.slk-btn-info,
+.slk-btn-info.slk-btn-ghost:not(.slk-btn-disabled):hover {
+  color: var(--slk-color-white);
+  background-color: var(--slk-color-info);
+  border-color: var(--slk-color-info);
+}
+
+.slk-btn-info:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
+  background-color: var(--slk-color-info-active);
+  border-color: var(--slk-color-info-active);
+}
+
+.slk-btn-info.slk-btn-ghost {
+  color: var(--slk-color-info);
+  background-color: transparent;
+  border-color: var(--slk-color-info);
+}
+
+/*======== BUTTON DANGER ========*/
+.slk-btn-danger,
+.slk-btn-danger.slk-btn-ghost:not(.slk-btn-disabled):hover {
+  color: var(--slk-color-white);
+  background-color: var(--slk-color-danger);
+  border-color: var(--slk-color-danger);
+}
+
+.slk-btn-danger:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
+  background-color: var(--slk-color-danger-active);
+  border-color: var(--slk-color-danger-active);
+}
+
+.slk-btn-danger.slk-btn-ghost {
+  color: var(--slk-color-danger);
+  background-color: transparent;
+  border-color: var(--slk-color-danger);
+}
+
+/*======== BUTTON DARK ========*/
+.slk-btn-dark,
+.slk-btn-dark.slk-btn-ghost:not(.slk-btn-disabled):hover {
+  color: var(--slk-color-white);
+  background-color: var(--slk-color-dark);
+  border-color: var(--slk-color-dark);
+}
+
+.slk-btn-dark:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
+  background-color: var(--slk-color-dark-active);
+  border-color: var(--slk-color-dark-active);
+}
+
+.slk-btn-dark.slk-btn-ghost {
+  color: var(--slk-color-dark);
+  background-color: transparent;
+  border-color: var(--slk-color-dark);
+}
+
+/*======== BUTTON WARNING ========*/
+.slk-btn-warning,
+.slk-btn-warning.slk-btn-ghost:not(.slk-btn-disabled):hover {
+  color: var(--slk-color-dark);
+  background-color: var(--slk-color-warning);
+  border-color: var(--slk-color-warning);
+}
+
+.slk-btn-warning:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
+  background-color: var(--slk-color-warning-active);
+  border-color: var(--slk-color-warning-active);
+}
+
+.slk-btn-warning.slk-btn-ghost {
+  color: var(--slk-color-warning);
+  background-color: transparent;
+  border-color: var(--slk-color-warning);
+}

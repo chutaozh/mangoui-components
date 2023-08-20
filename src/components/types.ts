@@ -1,0 +1,1 @@
+export type CommonTypes = 'primary' | 'success' | 'info' | 'danger' | 'dark' | 'warning';
