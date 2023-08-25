@@ -37,9 +37,9 @@ const Alert: React.FC<AlertProps> = (props) => {
         'slk-alert',
         `slk-alert-${type || 'default'}`,
         {
-            'slk-alert-closable': closable,
-            'slk-alert-ghost': ghost,
-            'slk-alert-highlighted': highlighted
+            'slk-alert-closable': Boolean(closable),
+            'slk-alert-ghost': Boolean(ghost),
+            'slk-alert-highlighted': Boolean(highlighted)
         },
         className
     );

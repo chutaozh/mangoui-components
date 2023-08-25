@@ -17,7 +17,7 @@ const Badge: React.FC<BadgeProps> = (props) => {
         'slk-badge',
         `slk-badge-${type || 'default'}`,
         {
-            [`slk-badge-ghost`]: ghost,
+            [`slk-badge-ghost`]: Boolean(ghost),
         },
         className
     );

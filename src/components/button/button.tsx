@@ -14,7 +14,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLSpanElement> {
     /** 禁用 */
     disabled?: boolean;
     /** 尺寸 */
-    size?: 'sm' | 'lg';
+    size?: 'small' | 'large';
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
@@ -23,10 +23,11 @@ const Button: React.FC<ButtonProps> = (props) => {
         'slk-btn',
         `slk-btn-${type || 'default'}`,
         {
-            [`slk-btn-${size}`]: size,
-            'slk-btn-disabled': disabled,
-            'slk-btn-ghost': ghost,
-            'slk-btn-block': block,
+            'slk-btn-sm': size === 'small',
+            'slk-btn-lg': size === 'large',
+            'slk-btn-disabled': Boolean(disabled),
+            'slk-btn-ghost': Boolean(ghost),
+            'slk-btn-block': Boolean(block),
         },
         className
     );

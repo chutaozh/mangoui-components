@@ -57,8 +57,8 @@ body {
     }
 
     .badge-list {
-        .slk-badge+.slk-badge {
-            margin-left: 12px;
+        .slk-badge {
+            margin: 6px 12px 6px 0;
         }
     }
 
@@ -67,8 +67,13 @@ body {
             margin-top: 12px;
         }
 
-        button+button {
-            margin-left: 12px;
+        >button,
+        >div>button {
+            margin: 6px 12px 6px 0;
+        }
+
+        .slk-btn-group+.slk-btn-group {
+            margin-left: 24px;
         }
     }
 
