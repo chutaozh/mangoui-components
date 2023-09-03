@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Badge, Alert, Button } from './components';
+import { Badge, Alert, Button, Switch } from './components';
 import './index.less';
 
 function App() {
@@ -154,6 +154,60 @@ function App() {
                                 <Button type="primary" ghost>Middle</Button>
                                 <Button type="primary" ghost>Button</Button>
                             </Button.Group>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-row">
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Switch Basic</h2>
+                    </div>
+                    <div className="card-body switch-list">
+                        <Switch defaultChecked />
+                        <Switch defaultChecked type="success" />
+                        <Switch defaultChecked type="danger" />
+                        <Switch defaultChecked type="info" />
+                        <Switch defaultChecked type="warning" />
+                        <Switch defaultChecked type="dark" />
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Switch Size</h2>
+                    </div>
+                    <div className="card-body switch-list">
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <Switch defaultChecked size='large' />
+                            <Switch defaultChecked />
+                            <Switch defaultChecked size='small' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-row">
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Switch Disabled</h2>
+                    </div>
+                    <div className="card-body switch-list">
+                        <Switch defaultChecked disabled />
+                        <Switch defaultChecked type="success" disabled />
+                        <Switch defaultChecked type="danger" disabled />
+                        <Switch defaultChecked type="info" disabled />
+                        <Switch defaultChecked type="warning" disabled />
+                        <Switch defaultChecked type="dark" disabled />
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-header">
+                        <h2>Switch With Text</h2>
+                    </div>
+                    <div className="card-body switch-list">
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <Switch defaultChecked size="large" onText='ON' offText='OFF' />
+                            <Switch defaultChecked onText='ON' offText='OFF' />
+                            <Switch defaultChecked size="small" onText='ON' offText='OFF' />
                         </div>
                     </div>
                 </div>

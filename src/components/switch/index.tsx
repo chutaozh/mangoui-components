@@ -1,0 +1,44 @@
+import * as  React from 'react';
+import cn from 'classnames';
+import { CommonTypes } from '../types';
+import './index.css';
+
+type SwitchTypes = CommonTypes;
+
+interface SwitchProps extends Omit<React.HTMLAttributes<HTMLLabelElement>, 'onChange'> {
+    type?: SwitchTypes;
+    size?: 'small' | 'large';
+    checked?: boolean;
+    disabled?: boolean;
+    defaultChecked?: boolean;
+    onText?: string;
+    offText?: string;
+    onChange?: (checked: boolean) => void;
+}
+
+const Switch: React.FunctionComponent<SwitchProps> = (props) => {
+    const { type, size, className, disabled, checked, defaultChecked, onText, offText, onChange, ...restProps } = props;
+    const classes = cn('slk-switch', {
+        [`slk-switch-${type}`]: Boolean(type),
+        [`slk-switch-${size}`]: Boolean(size),
+        'slk-switch-disabled': disabled,
+        'slk-switch-text': Boolean(onText) || Boolean(offText),
+    }, className);
+
+    return (
+        <label className={classes} {...restProps}>
+            <input
+                type="checkbox"
+                className="slk-switch-input"
+                disabled={disabled}
+                defaultChecked={defaultChecked}
+                checked={checked}
+                onChange={(e) => onChange?.(e.target.checked)}
+            />
+            <span className="slk-switch-label" data-on={onText} data-off={offText} />
+            <span className="slk-switch-handle" />
+        </label>
+    );
+};
+
+export default Switch;

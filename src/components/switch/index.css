@@ -1,0 +1,153 @@
+@import url(../variables.css);
+
+/*======== SWITCH ========*/
+.slk-switch {
+  --label-width: 54px;
+  --label-height: 25px;
+  --handle-width: 19px;
+  --handle-height: 19px;
+}
+
+.slk-switch-small {
+  --label-width: 44px;
+  --label-height: 20px;
+  --handle-width: 14px;
+  --handle-height: 14px;
+}
+
+.slk-switch-small > .slk-switch-label::before,
+.slk-switch-small > .slk-switch-label::after {
+  transform: scale(0.75) translateY(-60%);
+}
+
+.slk-switch-large {
+  --label-width: 64px;
+  --label-height: 30px;
+  --handle-width: 24px;
+  --handle-height: 24px;
+}
+
+.slk-switch-large > .slk-switch-label::before,
+.slk-switch-large > .slk-switch-label::after {
+  font-size: 14px;
+}
+
+.slk-switch:not(.slk-switch-text) {
+  --label-width: 44px;
+}
+
+.slk-switch-small:not(.slk-switch-text) {
+  --label-width: 34px;
+}
+
+.slk-switch-large:not(.slk-switch-text) {
+  --label-width: 54px;
+}
+
+.slk-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: var(--label-width);
+  height: var(--label-height);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slk-switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.slk-switch-input:checked ~ .slk-switch-label {
+  background: var(--slk-color-primary);
+}
+
+.slk-switch-input:checked ~ .slk-switch-label::before {
+  opacity: 1;
+}
+
+.slk-switch-input:checked ~ .slk-switch-label::after {
+  opacity: 0;
+}
+
+.slk-switch-input:checked ~ .slk-switch-handle {
+  left: calc(var(--label-width) - var(--handle-width) - 3px);
+}
+
+.slk-switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  background: var(--slk-color-secondary);
+  border-radius: var(--label-height);
+  transition: background 0.1s 0.1s ease-out;
+}
+
+.slk-switch-label::before,
+.slk-switch-label::after {
+  font-size: 12px;
+  content: attr(data-on);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 50%;
+  min-width: fit-content;
+  text-align: center;
+}
+
+.slk-switch-label::before {
+  left: 3px;
+  opacity: 0;
+}
+
+.slk-switch-label::after {
+  content: attr(data-off);
+  right: 3px;
+  opacity: 1;
+}
+
+.slk-switch-handle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: var(--handle-width);
+  height: var(--handle-height);
+  background: #fff;
+  border-radius: 50%;
+  transition: left 0.2s ease-out;
+}
+
+.slk-switch-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/*======== SWITCH SUCCESS ========*/
+.slk-switch-success > .slk-switch-input:checked ~ .slk-switch-label {
+  background: var(--slk-color-success);
+}
+
+/*======== SWITCH DANGER ========*/
+.slk-switch-danger > .slk-switch-input:checked ~ .slk-switch-label {
+  background: var(--slk-color-danger);
+}
+
+/*======== SWITCH INFO ========*/
+.slk-switch-info > .slk-switch-input:checked ~ .slk-switch-label {
+  background: var(--slk-color-info);
+}
+
+/*======== SWITCH WARNING ========*/
+.slk-switch-warning > .slk-switch-input:checked ~ .slk-switch-label {
+  background: var(--slk-color-warning);
+}
+
+/*======== SWITCH DARK ========*/
+.slk-switch-dark > .slk-switch-input:checked ~ .slk-switch-label {
+  background: var(--slk-color-dark);
+}
