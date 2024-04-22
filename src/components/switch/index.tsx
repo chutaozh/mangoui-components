@@ -18,25 +18,25 @@ interface SwitchProps extends Omit<React.HTMLAttributes<HTMLLabelElement>, 'onCh
 
 const Switch: React.FunctionComponent<SwitchProps> = (props) => {
     const { type, size, className, disabled, checked, defaultChecked, onText, offText, onChange, ...restProps } = props;
-    const classes = cn('slk-switch', {
-        [`slk-switch-${type}`]: Boolean(type),
-        [`slk-switch-${size}`]: Boolean(size),
-        'slk-switch-disabled': disabled,
-        'slk-switch-text': Boolean(onText) || Boolean(offText),
+    const classes = cn('mui-switch', {
+        [`mui-switch-${type}`]: Boolean(type),
+        [`mui-switch-${size}`]: Boolean(size),
+        'mui-switch-disabled': disabled,
+        'mui-switch-text': Boolean(onText) || Boolean(offText),
     }, className);
 
     return (
         <label className={classes} {...restProps}>
             <input
                 type="checkbox"
-                className="slk-switch-input"
+                className="mui-switch-input"
                 disabled={disabled}
                 defaultChecked={defaultChecked}
                 checked={checked}
                 onChange={(e) => onChange?.(e.target.checked)}
             />
-            <span className="slk-switch-label" data-on={onText} data-off={offText} />
-            <span className="slk-switch-handle" />
+            <span className="mui-switch-label" data-on={onText} data-off={offText} />
+            <span className="mui-switch-handle" />
         </label>
     );
 };

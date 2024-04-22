@@ -34,12 +34,12 @@ const Alert: React.FC<AlertProps> = (props) => {
     };
 
     const classes = cn(
-        'slk-alert',
-        `slk-alert-${type || 'default'}`,
+        'mui-alert',
+        `mui-alert-${type || 'default'}`,
         {
-            'slk-alert-closable': Boolean(closable),
-            'slk-alert-ghost': Boolean(ghost),
-            'slk-alert-highlighted': Boolean(highlighted)
+            'mui-alert-closable': Boolean(closable),
+            'mui-alert-ghost': Boolean(ghost),
+            'mui-alert-highlighted': Boolean(highlighted)
         },
         className
     );
@@ -49,9 +49,9 @@ const Alert: React.FC<AlertProps> = (props) => {
     }
 
     return (<div className={classes}  {...restProps} ref={ref}>
-        <div className="slk-alert-content">{children}</div>
+        <div className="mui-alert-content">{children}</div>
         {closable && <span
-            className="slk-alert-close"
+            className="mui-alert-close"
             onClick={handleClose}>×</span>
         }
     </div>);

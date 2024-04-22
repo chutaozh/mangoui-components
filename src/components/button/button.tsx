@@ -20,14 +20,14 @@ interface ButtonProps extends React.HTMLAttributes<HTMLSpanElement> {
 const Button: React.FC<ButtonProps> = (props) => {
     const { ghost, type, disabled, size, block, className, ...restProps } = props;
     const classes = cn(
-        'slk-btn',
-        `slk-btn-${type || 'default'}`,
+        'mui-btn',
+        `mui-btn-${type || 'default'}`,
         {
-            'slk-btn-sm': size === 'small',
-            'slk-btn-lg': size === 'large',
-            'slk-btn-disabled': Boolean(disabled),
-            'slk-btn-ghost': Boolean(ghost),
-            'slk-btn-block': Boolean(block),
+            'mui-btn-sm': size === 'small',
+            'mui-btn-lg': size === 'large',
+            'mui-btn-disabled': Boolean(disabled),
+            'mui-btn-ghost': Boolean(ghost),
+            'mui-btn-block': Boolean(block),
         },
         className
     );

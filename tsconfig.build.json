@@ -1,18 +1,17 @@
 {
-    "compilerOptions": {
-      "declaration": true,
-      "outDir": "./@sleek-design/ui/lib",
-      "module": "CommonJS",
-      "jsx": "react",
-      "target": "ES2015",
-      "allowSyntheticDefaultImports": true,
-      "moduleResolution": "NodeNext",
-      "esModuleInterop": false,
-      "baseUrl": "./",
-    },
-    "include": [
-      "src/components/**/*.ts",
-      "src/components/**/*.tsx"
-    ],
-  }
-  
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./@mango-ui/components/lib",
+    "module": "NodeNext",
+    "jsx": "react",
+    "target": "ES2015",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": false,
+    "baseUrl": "./",
+  },
+  "include": [
+    "src/components/**/*.ts",
+    "src/components/**/*.tsx"
+  ],
+}
