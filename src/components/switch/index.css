@@ -1,50 +1,50 @@
 @import url(../variables.css);
 
 /*======== SWITCH ========*/
-.slk-switch {
+.mui-switch {
   --label-width: 54px;
   --label-height: 25px;
   --handle-width: 19px;
   --handle-height: 19px;
 }
 
-.slk-switch-small {
+.mui-switch-small {
   --label-width: 44px;
   --label-height: 20px;
   --handle-width: 14px;
   --handle-height: 14px;
 }
 
-.slk-switch-small > .slk-switch-label::before,
-.slk-switch-small > .slk-switch-label::after {
+.mui-switch-small > .mui-switch-label::before,
+.mui-switch-small > .mui-switch-label::after {
   transform: scale(0.75) translateY(-60%);
 }
 
-.slk-switch-large {
+.mui-switch-large {
   --label-width: 64px;
   --label-height: 30px;
   --handle-width: 24px;
   --handle-height: 24px;
 }
 
-.slk-switch-large > .slk-switch-label::before,
-.slk-switch-large > .slk-switch-label::after {
+.mui-switch-large > .mui-switch-label::before,
+.mui-switch-large > .mui-switch-label::after {
   font-size: 14px;
 }
 
-.slk-switch:not(.slk-switch-text) {
+.mui-switch:not(.mui-switch-text) {
   --label-width: 44px;
 }
 
-.slk-switch-small:not(.slk-switch-text) {
+.mui-switch-small:not(.mui-switch-text) {
   --label-width: 34px;
 }
 
-.slk-switch-large:not(.slk-switch-text) {
+.mui-switch-large:not(.mui-switch-text) {
   --label-width: 54px;
 }
 
-.slk-switch {
+.mui-switch {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -54,40 +54,40 @@
   cursor: pointer;
 }
 
-.slk-switch-input {
+.mui-switch-input {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-.slk-switch-input:checked ~ .slk-switch-label {
-  background: var(--slk-color-primary);
+.mui-switch-input:checked ~ .mui-switch-label {
+  background: var(--mui-color-primary);
 }
 
-.slk-switch-input:checked ~ .slk-switch-label::before {
+.mui-switch-input:checked ~ .mui-switch-label::before {
   opacity: 1;
 }
 
-.slk-switch-input:checked ~ .slk-switch-label::after {
+.mui-switch-input:checked ~ .mui-switch-label::after {
   opacity: 0;
 }
 
-.slk-switch-input:checked ~ .slk-switch-handle {
+.mui-switch-input:checked ~ .mui-switch-handle {
   left: calc(var(--label-width) - var(--handle-width) - 3px);
 }
 
-.slk-switch-label {
+.mui-switch-label {
   position: relative;
   display: block;
   height: inherit;
-  background: var(--slk-color-secondary);
+  background: var(--mui-color-secondary);
   border-radius: var(--label-height);
   transition: background 0.1s 0.1s ease-out;
 }
 
-.slk-switch-label::before,
-.slk-switch-label::after {
+.mui-switch-label::before,
+.mui-switch-label::after {
   font-size: 12px;
   content: attr(data-on);
   color: #fff;
@@ -100,18 +100,18 @@
   text-align: center;
 }
 
-.slk-switch-label::before {
+.mui-switch-label::before {
   left: 3px;
   opacity: 0;
 }
 
-.slk-switch-label::after {
+.mui-switch-label::after {
   content: attr(data-off);
   right: 3px;
   opacity: 1;
 }
 
-.slk-switch-handle {
+.mui-switch-handle {
   position: absolute;
   top: 3px;
   left: 3px;
@@ -122,32 +122,32 @@
   transition: left 0.2s ease-out;
 }
 
-.slk-switch-disabled {
+.mui-switch-disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 /*======== SWITCH SUCCESS ========*/
-.slk-switch-success > .slk-switch-input:checked ~ .slk-switch-label {
-  background: var(--slk-color-success);
+.mui-switch-success > .mui-switch-input:checked ~ .mui-switch-label {
+  background: var(--mui-color-success);
 }
 
 /*======== SWITCH DANGER ========*/
-.slk-switch-danger > .slk-switch-input:checked ~ .slk-switch-label {
-  background: var(--slk-color-danger);
+.mui-switch-danger > .mui-switch-input:checked ~ .mui-switch-label {
+  background: var(--mui-color-danger);
 }
 
 /*======== SWITCH INFO ========*/
-.slk-switch-info > .slk-switch-input:checked ~ .slk-switch-label {
-  background: var(--slk-color-info);
+.mui-switch-info > .mui-switch-input:checked ~ .mui-switch-label {
+  background: var(--mui-color-info);
 }
 
 /*======== SWITCH WARNING ========*/
-.slk-switch-warning > .slk-switch-input:checked ~ .slk-switch-label {
-  background: var(--slk-color-warning);
+.mui-switch-warning > .mui-switch-input:checked ~ .mui-switch-label {
+  background: var(--mui-color-warning);
 }
 
 /*======== SWITCH DARK ========*/
-.slk-switch-dark > .slk-switch-input:checked ~ .slk-switch-label {
-  background: var(--slk-color-dark);
+.mui-switch-dark > .mui-switch-input:checked ~ .mui-switch-label {
+  background: var(--mui-color-dark);
 }

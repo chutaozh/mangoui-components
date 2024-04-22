@@ -1,7 +1,7 @@
 @import url(../variables.css);
 
 /*======== BADGE ========*/
-.slk-badge {
+.mui-badge {
   display: inline-block;
   padding: 6px 12px;
   font-size: 75%;
@@ -12,80 +12,80 @@
   vertical-align: baseline;
   border-radius: 2px;
   /* text-transform: uppercase; */
-  color: var(--slk-color-white);
+  color: var(--mui-color-white);
 }
 
 /*======== BADGE DEFAULT ========*/
-.slk-badge-default {
-  background-color: var(--slk-color-secondary);
+.mui-badge-default {
+  background-color: var(--mui-color-secondary);
 }
 
-.slk-badge-default.slk-badge-ghost {
-  color: var(--slk-color-secondary);
-  border: 1px solid var(--slk-color-secondary);
+.mui-badge-default.mui-badge-ghost {
+  color: var(--mui-color-secondary);
+  border: 1px solid var(--mui-color-secondary);
 }
 
 /*======== BADGE PRIMARY ========*/
-.slk-badge-primary {
-  background-color: var(--slk-color-primary);
+.mui-badge-primary {
+  background-color: var(--mui-color-primary);
 }
 
-.slk-badge-primary.slk-badge-ghost {
-  color: var(--slk-color-primary);
-  border: 1px solid var(--slk-color-primary);
+.mui-badge-primary.mui-badge-ghost {
+  color: var(--mui-color-primary);
+  border: 1px solid var(--mui-color-primary);
 }
 
 /*======== BADGE SUCCESS ========*/
-.slk-badge-success {
-  background-color: var(--slk-color-success);
+.mui-badge-success {
+  background-color: var(--mui-color-success);
 }
 
-.slk-badge-success.slk-badge-ghost {
-  color: var(--slk-color-success);
-  border: 1px solid var(--slk-color-success);
+.mui-badge-success.mui-badge-ghost {
+  color: var(--mui-color-success);
+  border: 1px solid var(--mui-color-success);
 }
 
 /*======== BADGE INFO ========*/
-.slk-badge-info {
-  background-color: var(--slk-color-info);
+.mui-badge-info {
+  background-color: var(--mui-color-info);
 }
 
-.slk-badge-info.slk-badge-ghost {
-  color: var(--slk-color-info);
-  border: 1px solid var(--slk-color-info);
+.mui-badge-info.mui-badge-ghost {
+  color: var(--mui-color-info);
+  border: 1px solid var(--mui-color-info);
 }
 
 /*======== BADGE DANGER ========*/
-.slk-badge-danger {
-  background-color: var(--slk-color-danger);
+.mui-badge-danger {
+  background-color: var(--mui-color-danger);
 }
 
-.slk-badge-danger.slk-badge-ghost {
-  color: var(--slk-color-danger);
-  border: 1px solid var(--slk-color-danger);
+.mui-badge-danger.mui-badge-ghost {
+  color: var(--mui-color-danger);
+  border: 1px solid var(--mui-color-danger);
 }
 
 /*======== BADGE DARK ========*/
-.slk-badge-dark {
-  background-color: var(--slk-color-dark);
+.mui-badge-dark {
+  background-color: var(--mui-color-dark);
 }
 
-.slk-badge-dark.slk-badge-ghost {
-  color: var(--slk-color-dark);
-  border: 1px solid var(--slk-color-dark);
+.mui-badge-dark.mui-badge-ghost {
+  color: var(--mui-color-dark);
+  border: 1px solid var(--mui-color-dark);
 }
 
 /*======== BADGE WARNING ========*/
-.slk-badge-warning {
-  background-color: var(--slk-color-warning);
+.mui-badge-warning {
+  background-color: var(--mui-color-warning);
 }
 
-.slk-badge-warning.slk-badge-ghost {
-  color: var(--slk-color-warning);
-  border: 1px solid var(--slk-color-warning);
+.mui-badge-warning.mui-badge-ghost {
+  color: var(--mui-color-warning);
+  border: 1px solid var(--mui-color-warning);
 }
 
 /*======== BADGE GHOST ========*/
-.slk-badge-ghost {
+.mui-badge-ghost {
   background-color: transparent;
 }

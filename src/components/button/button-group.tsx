@@ -9,7 +9,7 @@ export interface ButtonGroupProps extends Omit<React.HTMLAttributes<HTMLDivEleme
 
 const ButtonGroup: React.FC<ButtonGroupProps> = (props) => {
     const { direction, className, ...restProps } = props;
-    const classes = cn('slk-btn-group', { [`slk-btn-group-${direction}`]: Boolean(direction) }, className);
+    const classes = cn('mui-btn-group', { [`mui-btn-group-${direction}`]: Boolean(direction) }, className);
     return (<div {...restProps} className={classes} />);
 }
 

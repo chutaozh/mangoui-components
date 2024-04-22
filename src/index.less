@@ -12,28 +12,29 @@ body {
 }
 
 .container {
-    padding: 16px;
+    padding: 24px;
 
     .container-row {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .container-row+.container-row {
-        margin-top: 16px;
+        margin-top: 24px;
     }
 
     .card {
+        flex-grow: 1;
         position: relative;
         display: flex;
         flex-direction: column;
         min-width: 0;
         word-wrap: break-word;
-        background-color: #ffffff;
+        background-color: #f5f6fa;
         background-clip: border-box;
         border: 1px solid #e5e9f2;
         border-radius: 0.25rem;
-        width: calc(~"50% - 16px");
 
         .card-header {
             border-bottom: 1px solid #e5e9f2;
@@ -48,7 +49,11 @@ body {
 
         .card-body {
             flex: 1 1 auto;
-            padding: 1.88rem 1.88rem;
+            padding: 16px;
+
+            .container-row+.container-row {
+                margin-top: 16px;
+            }
         }
     }
 
@@ -56,36 +61,43 @@ body {
         margin-left: 16px;
     }
 
-    .badge-list {
-        .slk-badge {
-            margin: 6px 12px 6px 0;
+    .sub-card {
+        width: calc(~"50% - 16px");
+
+        .card-body {
+            background: #ffffff;
+            padding: 24px;
         }
     }
 
+    .badge-list {
+        display: flex;
+        gap: 12px;
+    }
+
     .button-list {
-        >div+div {
-            margin-top: 12px;
-        }
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
 
         >button,
-        >div>button {
-            margin: 6px 12px 6px 0;
-        }
-
-        .slk-btn-group+.slk-btn-group {
-            margin-left: 24px;
+        >div {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 12px;
         }
     }
 
     .alert-list {
-        .slk-alert+.slk-alert {
-            margin-top: 12px;
-        }
+        display: grid;
+        gap: 12px;
     }
 
     .switch-list {
-        .slk-switch {
-            margin: 6px 12px 6px 0;
-        }
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 }

@@ -1,7 +1,7 @@
 @import url(../variables.css);
 
 /*======== BUTTON ========*/
-.slk-btn {
+.mui-btn {
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -9,167 +9,167 @@
   user-select: none;
   border: 1px solid transparent;
   padding: 8px 12px;
-  border-radius: var(--slk-border-radius);
+  border-radius: var(--mui-border-radius);
   height: 32px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.slk-btn:not(.slk-btn-disabled) {
+.mui-btn:not(.mui-btn-disabled) {
   cursor: pointer;
 }
 
-.slk-btn-disabled {
+.mui-btn-disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.slk-btn-block {
+.mui-btn-block {
   width: 100%;
   display: block;
 }
 
 /*======== BUTTON SIZE ========*/
-.slk-btn-sm {
+.mui-btn-sm {
   padding: 6px 9px;
   height: 24px;
   font-size: 12px;
 }
 
-.slk-btn-lg {
+.mui-btn-lg {
   padding: 10px 15px;
   height: 40px;
 }
 
 /*======== BUTTON DEFAULT ========*/
-.slk-btn-default,
-.slk-btn-default.slk-btn-ghost:not(.slk-btn-disabled):hover {
-  color: var(--slk-color-white);
-  background-color: var(--slk-color-secondary);
-  border-color: var(--slk-color-secondary);
+.mui-btn-default,
+.mui-btn-default.mui-btn-ghost:not(.mui-btn-disabled):hover {
+  color: var(--mui-color-white);
+  background-color: var(--mui-color-secondary);
+  border-color: var(--mui-color-secondary);
 }
 
-.slk-btn-default:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
-  background-color: var(--slk-color-secondary-active);
-  border-color: var(--slk-color-secondary-active);
+.mui-btn-default:not(.mui-btn-ghost):not(.mui-btn-disabled):hover {
+  background-color: var(--mui-color-secondary-active);
+  border-color: var(--mui-color-secondary-active);
 }
 
-.slk-btn-default.slk-btn-ghost {
-  color: var(--slk-color-secondary);
+.mui-btn-default.mui-btn-ghost {
+  color: var(--mui-color-secondary);
   background-color: transparent;
-  border-color: var(--slk-color-secondary);
+  border-color: var(--mui-color-secondary);
 }
 
 /*======== BUTTON PRIMARY ========*/
-.slk-btn-primary,
-.slk-btn-primary.slk-btn-ghost:not(.slk-btn-disabled):hover {
-  color: var(--slk-color-white);
-  background-color: var(--slk-color-primary);
-  border-color: var(--slk-color-primary);
+.mui-btn-primary,
+.mui-btn-primary.mui-btn-ghost:not(.mui-btn-disabled):hover {
+  color: var(--mui-color-white);
+  background-color: var(--mui-color-primary);
+  border-color: var(--mui-color-primary);
 }
 
-.slk-btn-primary:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
-  background-color: var(--slk-color-primary-active);
-  border-color: var(--slk-color-primary-active);
+.mui-btn-primary:not(.mui-btn-ghost):not(.mui-btn-disabled):hover {
+  background-color: var(--mui-color-primary-active);
+  border-color: var(--mui-color-primary-active);
 }
 
-.slk-btn-primary.slk-btn-ghost {
-  color: var(--slk-color-primary);
+.mui-btn-primary.mui-btn-ghost {
+  color: var(--mui-color-primary);
   background-color: transparent;
-  border-color: var(--slk-color-primary);
+  border-color: var(--mui-color-primary);
 }
 
 /*======== BUTTON SUCCESS ========*/
-.slk-btn-success,
-.slk-btn-success.slk-btn-ghost:not(.slk-btn-disabled):hover {
-  color: var(--slk-color-white);
-  background-color: var(--slk-color-success);
-  border-color: var(--slk-color-success);
+.mui-btn-success,
+.mui-btn-success.mui-btn-ghost:not(.mui-btn-disabled):hover {
+  color: var(--mui-color-white);
+  background-color: var(--mui-color-success);
+  border-color: var(--mui-color-success);
 }
 
-.slk-btn-success:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
-  background-color: var(--slk-color-success-active);
-  border-color: var(--slk-color-success-active);
+.mui-btn-success:not(.mui-btn-ghost):not(.mui-btn-disabled):hover {
+  background-color: var(--mui-color-success-active);
+  border-color: var(--mui-color-success-active);
 }
 
-.slk-btn-success.slk-btn-ghost {
-  color: var(--slk-color-success);
+.mui-btn-success.mui-btn-ghost {
+  color: var(--mui-color-success);
   background-color: transparent;
-  border-color: var(--slk-color-success);
+  border-color: var(--mui-color-success);
 }
 
 /*======== BUTTON INFO ========*/
-.slk-btn-info,
-.slk-btn-info.slk-btn-ghost:not(.slk-btn-disabled):hover {
-  color: var(--slk-color-white);
-  background-color: var(--slk-color-info);
-  border-color: var(--slk-color-info);
+.mui-btn-info,
+.mui-btn-info.mui-btn-ghost:not(.mui-btn-disabled):hover {
+  color: var(--mui-color-white);
+  background-color: var(--mui-color-info);
+  border-color: var(--mui-color-info);
 }
 
-.slk-btn-info:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
-  background-color: var(--slk-color-info-active);
-  border-color: var(--slk-color-info-active);
+.mui-btn-info:not(.mui-btn-ghost):not(.mui-btn-disabled):hover {
+  background-color: var(--mui-color-info-active);
+  border-color: var(--mui-color-info-active);
 }
 
-.slk-btn-info.slk-btn-ghost {
-  color: var(--slk-color-info);
+.mui-btn-info.mui-btn-ghost {
+  color: var(--mui-color-info);
   background-color: transparent;
-  border-color: var(--slk-color-info);
+  border-color: var(--mui-color-info);
 }
 
 /*======== BUTTON DANGER ========*/
-.slk-btn-danger,
-.slk-btn-danger.slk-btn-ghost:not(.slk-btn-disabled):hover {
-  color: var(--slk-color-white);
-  background-color: var(--slk-color-danger);
-  border-color: var(--slk-color-danger);
+.mui-btn-danger,
+.mui-btn-danger.mui-btn-ghost:not(.mui-btn-disabled):hover {
+  color: var(--mui-color-white);
+  background-color: var(--mui-color-danger);
+  border-color: var(--mui-color-danger);
 }
 
-.slk-btn-danger:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
-  background-color: var(--slk-color-danger-active);
-  border-color: var(--slk-color-danger-active);
+.mui-btn-danger:not(.mui-btn-ghost):not(.mui-btn-disabled):hover {
+  background-color: var(--mui-color-danger-active);
+  border-color: var(--mui-color-danger-active);
 }
 
-.slk-btn-danger.slk-btn-ghost {
-  color: var(--slk-color-danger);
+.mui-btn-danger.mui-btn-ghost {
+  color: var(--mui-color-danger);
   background-color: transparent;
-  border-color: var(--slk-color-danger);
+  border-color: var(--mui-color-danger);
 }
 
 /*======== BUTTON DARK ========*/
-.slk-btn-dark,
-.slk-btn-dark.slk-btn-ghost:not(.slk-btn-disabled):hover {
-  color: var(--slk-color-white);
-  background-color: var(--slk-color-dark);
-  border-color: var(--slk-color-dark);
+.mui-btn-dark,
+.mui-btn-dark.mui-btn-ghost:not(.mui-btn-disabled):hover {
+  color: var(--mui-color-white);
+  background-color: var(--mui-color-dark);
+  border-color: var(--mui-color-dark);
 }
 
-.slk-btn-dark:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
-  background-color: var(--slk-color-dark-active);
-  border-color: var(--slk-color-dark-active);
+.mui-btn-dark:not(.mui-btn-ghost):not(.mui-btn-disabled):hover {
+  background-color: var(--mui-color-dark-active);
+  border-color: var(--mui-color-dark-active);
 }
 
-.slk-btn-dark.slk-btn-ghost {
-  color: var(--slk-color-dark);
+.mui-btn-dark.mui-btn-ghost {
+  color: var(--mui-color-dark);
   background-color: transparent;
-  border-color: var(--slk-color-dark);
+  border-color: var(--mui-color-dark);
 }
 
 /*======== BUTTON WARNING ========*/
-.slk-btn-warning,
-.slk-btn-warning.slk-btn-ghost:not(.slk-btn-disabled):hover {
-  color: var(--slk-color-dark);
-  background-color: var(--slk-color-warning);
-  border-color: var(--slk-color-warning);
+.mui-btn-warning,
+.mui-btn-warning.mui-btn-ghost:not(.mui-btn-disabled):hover {
+  color: var(--mui-color-dark);
+  background-color: var(--mui-color-warning);
+  border-color: var(--mui-color-warning);
 }
 
-.slk-btn-warning:not(.slk-btn-ghost):not(.slk-btn-disabled):hover {
-  background-color: var(--slk-color-warning-active);
-  border-color: var(--slk-color-warning-active);
+.mui-btn-warning:not(.mui-btn-ghost):not(.mui-btn-disabled):hover {
+  background-color: var(--mui-color-warning-active);
+  border-color: var(--mui-color-warning-active);
 }
 
-.slk-btn-warning.slk-btn-ghost {
-  color: var(--slk-color-warning);
+.mui-btn-warning.mui-btn-ghost {
+  color: var(--mui-color-warning);
   background-color: transparent;
-  border-color: var(--slk-color-warning);
+  border-color: var(--mui-color-warning);
 }

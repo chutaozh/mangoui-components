@@ -14,10 +14,10 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
 const Badge: React.FC<BadgeProps> = (props) => {
     const { type, ghost, className, ...restProps } = props;
     const classes = cn(
-        'slk-badge',
-        `slk-badge-${type || 'default'}`,
+        'mui-badge',
+        `mui-badge-${type || 'default'}`,
         {
-            [`slk-badge-ghost`]: Boolean(ghost),
+            [`mui-badge-ghost`]: Boolean(ghost),
         },
         className
     );

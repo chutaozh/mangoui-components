@@ -54,14 +54,14 @@ function copyFiles(sourceDir, targetDir) {
   const cmd = args[0];
 
   const sourceRootDir = "src/components";
-  const targetRootDir = "@sleek-design";
+  const targetRootDir = "@mango-ui";
 
   if (cmd === "rm") {
-    removeFiles("@sleek-design");
+    removeFiles("@mango-ui");
   }
 
   if (cmd === "cp") {
-    copyFiles(sourceRootDir, `${targetRootDir}/ui/lib`);
+    copyFiles(sourceRootDir, `${targetRootDir}/components/lib`);
 
     const rootFiles = fs
       .readdirSync("./")
@@ -73,7 +73,7 @@ function copyFiles(sourceDir, targetDir) {
       const stats = fs.statSync(file);
 
       if (stats.isFile()) {
-        fs.copyFileSync(file, `${targetRootDir}/ui/${file}`);
+        fs.copyFileSync(file, `${targetRootDir}/components/${file}`);
       }
     });
   }
