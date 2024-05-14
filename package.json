@@ -1,12 +1,12 @@
 {
-  "name": "@mango-ui/components",
+  "name": "@mangoui/components",
   "version": "0.0.0-alpha.1",
   "description": "A simple library of React UI components",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chutao-zhang/mango-ui-components.git"
+    "url": "https://github.com/chutaozh/mangoui-components.git"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve -c scripts/webpack.config.js --mode development",
@@ -16,7 +16,7 @@
     "tsc": "npm run rm && tsc --project tsconfig.build.json && npm run cp"
   },
   "keywords": [
-    "mango-ui",
+    "mangoui",
     "react",
     "components"
   ],
