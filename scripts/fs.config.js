@@ -54,10 +54,10 @@ function copyFiles(sourceDir, targetDir) {
   const cmd = args[0];
 
   const sourceRootDir = "src/components";
-  const targetRootDir = "@mango-ui";
+  const targetRootDir = "@mangoui";
 
   if (cmd === "rm") {
-    removeFiles("@mango-ui");
+    removeFiles("@mangoui");
   }
 
   if (cmd === "cp") {
